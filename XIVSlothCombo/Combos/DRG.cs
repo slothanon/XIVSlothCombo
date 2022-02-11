@@ -193,12 +193,6 @@ namespace XIVSlothComboPlugin.Combos
 
                     if (lastComboMove == DRG.VorpalThrust && level >= DRG.Levels.FullThrust)
                         return DRG.FullThrust;
-
-                    if (lastComboMove == DRG.FullThrust && !GetCooldown(DRG.HighJump).IsCooldown && level >= DRG.Levels.HighJump)
-                        return DRG.HighJump;
-
-                    if (lastComboMove == DRG.FullThrust && !GetCooldown(DRG.Jump).IsCooldown && level >= DRG.Levels.Jump && level <= 73)
-                        return DRG.Jump;
                 }
 
                 if (HasEffect(DRG.Buffs.SharperFangAndClaw) && level >= DRG.Levels.FangAndClaw)
